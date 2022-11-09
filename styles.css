@@ -12,19 +12,63 @@ body {
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: 1.7fr 5fr;
+    grid-template-columns: minmax(300px, 1fr) 4fr;
     grid-template-rows: 120px 4fr;
 }
 
 .sidebar {
+    padding: 20px;
+    display: grid;
     grid-row: 1/3;
     background-color: rgb(101, 201, 169);
+    color: white;
+}
+
+.dash .icon div {
+    position: relative;
+}
+.dash .icon img{
+    position: absolute;
+    left: 25px;
+    top: 30px;
+    width: 50px;
+}
+
+.icon img{
+    object-fit: contain;
+    width: 30px;
+}
+
+.sidebar ul{
+    width: 250px;
+}
+
+.links li {
+    margin: 16px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+
+.dash {
+    gap: 8px;
+    font-size: 28px;
 }
 
 .header {
     grid-row: ;
 }
 
-.main {
+.main-content {
     background-color: rgb(206, 247, 234);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    
+    list-style: none;
 }
