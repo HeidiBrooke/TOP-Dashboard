@@ -64,6 +64,8 @@ body {
 .header {
     display: grid;
     grid-template-rows: 1fr 1fr;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 20px 20px 8px 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
 }
 
 .top-nav, .bottom-nav{
@@ -130,6 +132,7 @@ body {
     gap: 12px;
     font-size: 16px;
     flex-wrap: nowrap;
+    color: rgb(219, 109, 109);
 }
 
 .name{
@@ -155,7 +158,8 @@ body {
 
 .main-content {
     background-color: rgb(206, 247, 234);
-    background-image: linear-gradient(to bottom right, rgb(206, 247, 234), rgb(101, 201, 169));
+    /* background-image: linear-gradient(to bottom right, rgb(206, 247, 234), rgb(101, 201, 169)); */
+    box-shadow: inset rgba(0, 0, 0, 0.16) -0 7px 9px -7px;
 }
 
 ul {
