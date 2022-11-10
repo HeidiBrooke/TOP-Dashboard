@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
+    scrollbar-gutter: stable both-edges;
     margin: 0px;
     padding: 0px;
     font-family: 'Rubik', sans-serif;
@@ -9,8 +10,9 @@ body {
 }
 
 .wrapper {
-    width: 100vw;
-    height: 100vh;
+    scrollbar-gutter: stable both-edges;
+    width: 99vw;
+    height: 99vh;
     display: grid;
     grid-template-columns: minmax(300px, 1fr) 4fr;
     grid-template-rows: 150px 4fr;
@@ -178,7 +180,7 @@ body {
     display: grid;
     gap: 16px;
     grid-template-columns: clamp(250px, 350px, 400px) clamp(250px, 350px, 400px);
-    grid-template-rows: repeat(3, minmax(200px, 300px));
+    grid-template-rows: repeat(3, clamp(100px, 300px));
 }
 
 .right-fill {
@@ -222,10 +224,10 @@ body {
 }
 
 .prj-title {
-    font-size: .8em;
+    font-size: .7em;
 }
 .prj-info{
-    font-size: .7em;
+    font-size: .6em;
     font-weight: 300;
 }
 .card-menu {
@@ -239,7 +241,7 @@ body {
 
 .card-menu .icon img{
     padding-top: 8px;
-    width: 25px;
+    width: minmax(15px, 25px);
 }
 
 .left-tab {
