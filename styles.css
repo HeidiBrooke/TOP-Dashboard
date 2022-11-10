@@ -185,6 +185,7 @@ body {
     grid-row: 2/3;
     grid-column: 2/3;
     display: grid;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
 
 }
@@ -208,7 +209,6 @@ body {
     display: grid;
     /* padding: 12px; */
     grid-template-rows: 3fr 1fr;
-    width: 100%;
     border-radius: 16px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.16) 0 7px 9px -7px;
@@ -267,6 +267,16 @@ body {
     /* grid-template-rows: repeat(3, 1fr); */
     padding: 20px;
 }
+
+.announcement {
+    overflow: scroll;
+}
+
+.announcement::-webkit-scrollbar-thumb, .announcement::-webkit-scrollbar-thumb {
+    width: 10px;
+    color: rgb(255, 210, 210);
+
+} 
 
 .content {
     display: flex;
