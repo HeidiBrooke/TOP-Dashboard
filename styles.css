@@ -158,8 +158,93 @@ body {
 
 .main-content {
     background-color: rgb(206, 247, 234);
+    background-color: rgb(232, 255, 248);
     /* background-image: linear-gradient(to bottom right, rgb(206, 247, 234), rgb(101, 201, 169)); */
     box-shadow: inset rgba(0, 0, 0, 0.16) -0 7px 9px -7px;
+}
+
+.main-content {
+    display: grid;
+    padding: 16px;
+    gap: 16px;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 50px 1fr;
+}
+
+.projects {
+    grid-row: 2/3;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.right-fill {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.project .title {
+    grid-column: 1/2; 
+}
+
+.announcements .title {
+    grid-column: 2/3;
+}
+
+.title {
+    align-self: end;
+    font-weight: 500;
+    font-size: .9em;
+    color: rgb(101, 201, 169);
+}
+
+.card {
+    display: grid;
+    /* padding: 12px; */
+    grid-template-rows: 3fr 1fr;
+    width: 100%;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0 7px 9px -7px;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+
+}
+
+.prj-title {
+    font-size: .8em;
+}
+.prj-info{
+    font-size: .7em;
+    font-weight: 300;
+}
+.card-menu {
+    grid-row: 2/3;
+    display: flex;
+    gap: 12px;
+    padding-right: 12px;
+    justify-content: end;
+    align-items: center;
+}
+
+.card-menu .icon img{
+    padding-top: 8px;
+    width: 25px;
+}
+
+.left-tab {
+    opacity: 0%;
+    width: 8px;
+    height: 100%;
+    background-color: rgb(255, 210, 210);
 }
 
 ul {
