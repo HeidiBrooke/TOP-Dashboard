@@ -23,6 +23,8 @@ body {
     background-color: rgb(101, 201, 169);
     /* background-image: linear-gradient(to bottom right, rgb(206, 247, 234), rgb(101, 201, 169)); */
     color: white;
+    gap: 50px;
+    grid-template-rows: clamp(50px, 80px, 300px) clamp(300px, 350px, 400px) ;
 }
 
 .dash .icon div {
@@ -148,7 +150,7 @@ body {
     font-size: 1rem;
 }
 .right-menu div {
-    padding: 6px;
+    padding: 10px;
     text-align: center;
     background-color: rgb(101, 201, 169);
     /* border: none; */
@@ -167,7 +169,7 @@ body {
     display: grid;
     padding: 16px;
     gap: 16px;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 50px 1fr;
 }
 
@@ -175,8 +177,8 @@ body {
     grid-row: 2/3;
     display: grid;
     gap: 16px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: clamp(250px, 350px, 400px) clamp(250px, 350px, 400px);
+    grid-template-rows: repeat(3, minmax(200px, 300px));
 }
 
 .right-fill {
@@ -241,11 +243,71 @@ body {
 }
 
 .left-tab {
-    opacity: 0%;
-    width: 8px;
-    height: 100%;
+    opacity: 100%;
+    width: 10px;
+    grid-area: 1/1/3/2;
+    border-bottom-left-radius: 16px;
+    border-top-left-radius: 16px;
     background-color: rgb(255, 210, 210);
 }
+
+.right-fill{
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    gap: 20px;
+    grid-template-columns: minmax(250px, 300px);
+    grid-template-rows: minmax(200px, 400px) 1.2fr;
+
+}
+
+.announcement, .container-trending .card {
+    display: flex;
+    flex-direction: column;
+    /* grid-template-rows: repeat(3, 1fr); */
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-bottom: solid 2px rgb(206, 247, 234);
+}
+.announcement-title, .name {
+    font-size: .9rem;
+}
+.announcement-info, .sub {
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+.container-trending {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: start;
+}
+
+.container-trending .card {
+    gap: 20px;
+}
+
+.container-trending .title {
+    align-self: start;
+}
+
+.card .trending {
+    display: flex;
+    gap: 8px;
+    align-items: flex-end;
+}
+
+.sub {
+    color: grey;
+}
+
+
 
 ul {
     margin: 0;
